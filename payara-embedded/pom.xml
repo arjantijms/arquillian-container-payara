@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>fish.payara</groupId>
-        <artifactId>arquillian-parent-payara</artifactId>
-        <version>1.0.1.Final-SNAPSHOT</version>
+        <groupId>fish.payara.arquillian</groupId>
+        <artifactId>parent-payara-containers</artifactId>
+        <version>171-beta1</version>
     </parent>
 
-    <artifactId>arquillian-payara-embedded</artifactId>
+    <artifactId>payara-embedded-container</artifactId>
     <name>Arquillian Container Payara Embedded</name>
 
     <description>
@@ -19,32 +19,36 @@
 
     <!-- Dependencies -->
     <dependencies>
-
-        <!-- org.jboss.arquillian -->
         <dependency>
             <groupId>org.jboss.arquillian.container</groupId>
             <artifactId>arquillian-container-spi</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.jboss.arquillian.container</groupId>
             <artifactId>arquillian-container-test-spi</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.jboss.arquillian.protocol</groupId>
             <artifactId>arquillian-protocol-servlet</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.jboss.arquillian.testenricher</groupId>
             <artifactId>arquillian-testenricher-cdi</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.jboss.arquillian.testenricher</groupId>
             <artifactId>arquillian-testenricher-ejb</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.jboss.arquillian.testenricher</groupId>
             <artifactId>arquillian-testenricher-resource</artifactId>
         </dependency>
+        
         <dependency>
             <groupId>org.jboss.arquillian.testenricher</groupId>
             <artifactId>arquillian-testenricher-initialcontext</artifactId>

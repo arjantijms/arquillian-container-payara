@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     
     <parent>
-        <groupId>fish.payara</groupId>
-        <artifactId>arquillian-parent-payara</artifactId>
-        <version>1.0.1.Final-SNAPSHOT</version>
+        <groupId>fish.payara.arquillian</groupId>
+        <artifactId>parent-payara-containers</artifactId>
+        <version>171-beta1</version>
     </parent>
 
-    <artifactId>arquillian-payara-managed</artifactId>
+    <artifactId>payara-managed-container</artifactId>
     <name>Arquillian Container Payara Managed</name>
 
     <description>
@@ -19,13 +19,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.arquillian.container</groupId>
-            <artifactId>arquillian-glassfish-common</artifactId>
+            <groupId>fish.payara.arquillian</groupId>
+            <artifactId>payara-container-common</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -62,6 +57,14 @@
             <groupId>org.jboss.arquillian.testenricher</groupId>
             <artifactId>arquillian-testenricher-initialcontext</artifactId>
         </dependency>
+        
+         <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+        </dependency>
+        
+        
+        <!-- Test -->
 
         <dependency>
             <groupId>org.jboss.arquillian.junit</groupId>
